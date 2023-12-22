@@ -28,7 +28,7 @@ const sortedBand=band.sort((a,b)=>{
 	const bandB=b.replace(/^(a|an|the)\s+/i,'');
 	return bandA.localeCompare(bandB);
 });
-		const bandList=document.getElementById('band');
+		const bandList=document.getElementById('bands');
 		sortedBand.forEach(band=>{
 			const listItem=document.createElement('li');
 			listItem.textContent=band;
