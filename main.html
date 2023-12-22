@@ -23,13 +23,13 @@
 	</ul>
     <script type="text/javascript" src="./script.js">
 const band=['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-const sortedBands=band.sort((a,b)=>{
+const sortedBand=band.sort((a,b)=>{
 	const bandA=a.replace(/^(a|an|the)\s+/i,'');
 	const bandB=b.replace(/^(a|an|the)\s+/i,'');
 	return bandA.localeCompare(bandB);
 });
 		const bandList=document.getElementById('band');
-		sortedBands.forEach(band=>{
+		sortedBand.forEach(band=>{
 			const listItem=document.createElement('li');
 			listItem.textContent=band;
 			bandList.appendChild(listItem);
